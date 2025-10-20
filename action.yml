@@ -2,16 +2,15 @@ name: 'Hello World with Docker Action'
 description: 'Geet someone'
 inputs:
   who-to-greet:
-  description: 'Who to greet'
-  required: true
-  default: 'World'
+    description: 'Who to greet'
+    required: true
+    default: 'World'
 # outputs: #TODO: to implement
 #   joke:
 #     description: 'A joke'
 
 runs:
   usin: 'Docker'
-  image: 'docker://ghcr.io/natalnw7/docker-action:latest'
+  image: 'docker://ghcr.io/natalnw7/docker-action:main'
   args:
     - ${{ inputs.who-to-greet }}
-    
