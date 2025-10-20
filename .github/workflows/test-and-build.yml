@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name 'github-actions'
           git config user.email 'github-action@github.com'
-          git pull origin ${{ github.head_ref }}
+          git pull origin ${{ github.head_ref }} --ff-only
           git add main
           git commit -m 'create `main` binary'
           git push origin HEAD:${{ github.head_ref }}
