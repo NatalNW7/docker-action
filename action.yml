@@ -10,7 +10,7 @@ inputs:
 #     description: 'A joke'
 
 runs:
-  usin: 'Docker'
+  using: 'docker'
   image: 'docker://ghcr.io/natalnw7/docker-action:main'
   args:
     - ${{ inputs.who-to-greet }}
