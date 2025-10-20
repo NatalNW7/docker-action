@@ -4,7 +4,7 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 
 ## Inputs
 
-## `who-to-greet`
+### `who-to-greet`
 
 **Required** The name of the person to greet. Default `"World"`.
 
@@ -13,7 +13,8 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 not implemented yet
 
 ## Example usage
-
+```yml
 uses: NatalNW7/docker-action@main
 with:
   who-to-greet: 'Mona the Octocat'
+```

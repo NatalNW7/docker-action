@@ -14,3 +14,4 @@ runs:
   image: 'docker://ghcr.io/natalnw7/docker-action:latest'
   args:
     - ${{ inputs.who-to-greet }}
+    
