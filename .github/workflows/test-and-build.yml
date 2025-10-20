@@ -6,6 +6,8 @@ on:
 jobs:
   test-and-build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -22,6 +24,8 @@ jobs:
         run: ./main World
       - name: Commit Binary
         run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-action@github.com'
           git add main
           git commit -m 'create `main` binary'
           git push
